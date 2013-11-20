@@ -1,0 +1,41 @@
+<html>
+<h1>Section A</h1>
+<body>
+<select name="myFamily" id = "myFamily" onchange = "getSelectedValue();">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+</select>
+
+
+
+<p> </p>
+<p id="sections"></p>
+
+<script type = "text/javascript">
+function getSelectedValue()
+{
+	var index = document.getElementById('myFamily').selectedIndex;
+	var strUser = e.options[e.selectedIndex].value;
+	alert("value="+document.getElementById('myFamily').value);  
+    alert("text="+document.getElementById('myFamily').options[index].text);  
+	
+</script>
+
+
+
+<script>
+function myFunction()
+{
+var x=document.getElementById("sections")
+
+x.innerHTML=Math.floor((Math.random()*100)+1);
+}
+</script>
+
+</html>
